@@ -1,0 +1,19 @@
+body {
+  color: white;
+}
+
+.floor {
+  background-color: blueviolet;
+}
+
+.low {
+  background-color: greenyellow;
+}
+
+.middle {
+  background-color: blue;
+}
+
+.high {
+  background-color: darkorange;
+}
