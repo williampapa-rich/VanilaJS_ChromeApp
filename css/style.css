@@ -1,3 +1,145 @@
 .hidden {
-    display: none;
+  display: none;
+}
+
+.center {
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  /*justify-content: center;*/
+  flex-direction: column;
+}
+
+html,
+body {
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: block;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  overflow: hidden;
+  height: 100vh;
+  width: 100%;
+}
+
+img {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  z-index: -1;
+}
+
+#clock {
+  margin-top: 130px;
+  margin-bottom: 70px;
+  font-size: 7em;
+  border-radius: 10px;
+  background-size: cover;
+  color: white;
+  font-weight: bold;
+}
+
+#login-form {
+  margin-bottom: 20px;
+}
+
+#login-form input {
+  background: none;
+  appearance: none;
+  border: 0;
+  border-bottom: 2px solid white;
+  font-size: 30px;
+  color: white;
+}
+
+#login-form input::placeholder {
+  color: white;
+}
+
+#greeting {
+  color: white;
+  font-size: 30px;
+  animation: fadein 1s ease-in;
+  margin-bottom: 30px;
+}
+
+#weather {
+  position: absolute;
+  color: white;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+}
+
+#quote {
+  position: absolute;
+  text-align: center;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100vw;
+  bottom: 30px;
+  font-size: 20px;
+}
+
+.todo-card {
+  background-color: black;
+  opacity: 60%;
+  border-radius: 7px;
+  width: 600px;
+  margin-bottom: 10px;
+}
+
+#todo-form {
+  text-align: center;
+}
+
+#todo-form input {
+  background: none;
+  appearance: none;
+  border: 0;
+  border-bottom: 2px solid white;
+  font-size: 30px;
+  color: white;
+}
+
+#todo-form input::placeholder {
+  color: white;
+  cursor: pointer;
+}
+
+#todo-list {
+  font-size: 20px;
+  color: white;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-left: 30px;
+}
+
+#todo-list li {
+  width: 400px;
+  word-break: break-all;
+  margin-bottom: 5px;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
